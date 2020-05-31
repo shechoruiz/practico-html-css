@@ -8,6 +8,8 @@ a{
     cursor: pointer;
 }
 
+/* Header */
+
 header{
     width: 100%;
     height: 60px;
@@ -47,65 +49,128 @@ header{
     margin-left: 10px;
 }
 
+/* Main */
+
 .hero{
-    height: 505px;
+    margin-top: 150px;
+    text-align: center;
 }
 
 .container{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.hero .container img{
+    width: 300px;
+}
+
+main .main_input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main_input .main_input_container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #DFE1E5;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: auto;
 }
 
-.img_container {
-    margin-top: 120px;
+main .main_input_container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #DFE1E500;
 }
 
-.form_container input{
-    width: 450px;
-    line-height: 24px;
+.main_input_container input{
     outline: none;
-    border-radius: 20px;
-    border: 1px solid black;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    border: none;
+    width: 450px;
+    height: 40px;
 }
+
+main .main_input .search_icon{
+    background-image: url('https://pngimage.net/wp-content/uploads/2018/06/lupa-de-pesquisa-png-6.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    
+}
+
+main .main_input .micro_icon{
+    background-image: url('https://www.pinclipart.com/picdir/big/32-322562_open-google-microphone-icon-clipart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
 
 .div_buttons{
     display: flex;
     justify-content: center;
+    width: 530px;
+    margin: 0 auto;
 }
 
 .div_buttons button{
-    margin: 5px;
-}
-
-footer{
+    margin-right: 15px;
+    height: 36px;
     background-color: #F2F2F2;
-    height: 60px;
-    width: 100%;
-}
-
-.links1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.links1 ul{
-    display: inherit;
-    align-items: inherit;
-    list-style-type: none;
-    padding: 0;
-}
-
-.links1 ul li{
-    display: inherit;
+    border: none;
+    font-size: 14px;
+    color: #5F6368;
+    border-radius: 5px;
     padding: 0 15px;
 }
 
-.links1 ul li a{
+.div_buttons button:hover{
+    border: 1px solid #C6C6C6;
+    cursor: pointer;
+    box-shadow: 0 1px 1px #FFFFFF;
+    color: #222;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 50px;
+    /* Con las siguientes 2 lineas, aseguro que el footer siempre este al final de la página */
+    position: absolute;
+    bottom: 0;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    border-top: 1px solid #E4E4E4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style-type: none;
+    display: flex;
+    padding-left: 0 ;
+}
+
+footer .footer_left{
+    justify-self: left;
+}
+
+footer .footer_right{
+    justify-self: right;
+}
+
+footer ul li a{
     color: #5f6368;
+    margin: 10px;
 }
